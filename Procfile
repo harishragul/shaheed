@@ -1,0 +1,1 @@
+web: gunicorn shaheedbackend.wsgi
