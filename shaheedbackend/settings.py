@@ -26,6 +26,9 @@ SECRET_KEY = 'qvvgkbb)v#dp+=$%!1n4q1we4$6_8h3q$96fxzrtfwj(%qzb(k'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+CORS_ORIGIN_WHITELIST = [
+     'http://localhost:3000'
+]
 
 
 # Application definition
@@ -39,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'media.apps.MediaConfig',
     'storages',
+    'corsheaders',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -50,6 +55,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'shaheedbackend.urls'
@@ -140,14 +146,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-AWS_ACCESS_KEY_ID = 'AKIAWXABWVA7SZLNTSQL'
-AWS_SECRET_ACCESS_KEY = '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'
+AWS_ACCESS_KEY_ID = 'AKIAWXABWVA72YOTLKUZ'
+AWS_SECRET_ACCESS_KEY = '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'
 AWS_STORAGE_BUCKET_NAME = 'shaheedbackend'
 AWS_QUERYSTRING_AUTH = False
 AWS_S3_REGION_NAME = 'us-east-2'
 
 AWS_S3_SIGNATURE_VERSION = 's3v4'
 AWS_S3_FILE_OVERWRITE = True
-AWS_DEFAULT_ACL = 'public-read'
 AWS_S3_VERIFY = True
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'

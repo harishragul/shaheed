@@ -15,13 +15,22 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework import routers                 
+from media import views
 
 from django.conf.urls.static import static
 from django.conf import settings
 
+router = routers.DefaultRouter()                   
+router.register(r'photo', views.PhotoView, 'photo')
+router.register(r'animation', views.AnimationView, 'animation')
+router.register(r'music', views.MusicView, 'music')
+router.register(r'simulation', views.SimulationView, 'simulation')
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('media.urls'))
+    path('', include('media.urls')),
+    path('api/', include(router.urls)),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

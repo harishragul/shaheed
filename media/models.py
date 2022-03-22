@@ -5,14 +5,16 @@ class Photo(models.Model):
     image = models.ImageField(upload_to='photos/')
     description = models.CharField(max_length=200)
     uploaded_at = models.DateTimeField(auto_now_add=True)
+    main = models.BooleanField(default=False)
 
     def __str__(self):
         return self.description
 
-class Animations(models.Model):
+class Animation(models.Model):
     video = models.FileField(upload_to='animations/')
     description = models.CharField(max_length=200)
     uploaded_at = models.DateTimeField(auto_now_add=True)
+    main = models.BooleanField(default=False)
 
     def __str__(self):
         return self.description
@@ -22,6 +24,7 @@ class Music(models.Model):
     thumbnail = models.ImageField(upload_to='music/')
     description = models.CharField(max_length=200)
     uploaded_at = models.DateTimeField(auto_now_add=True)
+    main = models.BooleanField(default=False)
 
     def __str__(self):
         return self.description
@@ -30,6 +33,7 @@ class Simulation(models.Model):
     video = models.FileField(upload_to='simulation/')
     description = models.CharField(max_length=200)
     uploaded_at = models.DateTimeField(auto_now_add=True)
+    main = models.BooleanField(default=False)
 
     def __str__(self):
         return self.description
