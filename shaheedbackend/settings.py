@@ -25,7 +25,8 @@ SECRET_KEY = 'qvvgkbb)v#dp+=$%!1n4q1we4$6_8h3q$96fxzrtfwj(%qzb(k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://shaheedbackend.herokuapp.com"]
+
 CORS_ORIGIN_WHITELIST = [
      'http://localhost:3000'
 ]
