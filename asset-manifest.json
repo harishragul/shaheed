@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/saheedportfolio/static/css/main.cbefd297.chunk.css",
+    "main.js": "/saheedportfolio/static/js/main.0fd4e689.chunk.js",
+    "main.js.map": "/saheedportfolio/static/js/main.0fd4e689.chunk.js.map",
+    "runtime~main.js": "/saheedportfolio/static/js/runtime~main.dab90f97.js",
+    "runtime~main.js.map": "/saheedportfolio/static/js/runtime~main.dab90f97.js.map",
+    "static/js/2.6572558f.chunk.js": "/saheedportfolio/static/js/2.6572558f.chunk.js",
+    "static/js/2.6572558f.chunk.js.map": "/saheedportfolio/static/js/2.6572558f.chunk.js.map",
+    "index.html": "/saheedportfolio/index.html",
+    "precache-manifest.cee4c2e58302220fe765246a3a09dc5c.js": "/saheedportfolio/precache-manifest.cee4c2e58302220fe765246a3a09dc5c.js",
+    "service-worker.js": "/saheedportfolio/service-worker.js",
+    "static/css/main.cbefd297.chunk.css.map": "/saheedportfolio/static/css/main.cbefd297.chunk.css.map",
+    "static/media/3ds_max.png": "/saheedportfolio/static/media/3ds_max.a40dcaeb.png",
+    "static/media/Houdini.png": "/saheedportfolio/static/media/Houdini.e1ee53fa.png",
+    "static/media/a_live.png": "/saheedportfolio/static/media/a_live.e5037a74.png",
+    "static/media/after-effects.png": "/saheedportfolio/static/media/after-effects.93d8a12a.png",
+    "static/media/cinema_4d.png": "/saheedportfolio/static/media/cinema_4d.c308657c.png",
+    "static/media/fl.png": "/saheedportfolio/static/media/fl.0676ae65.png",
+    "static/media/nuke.png": "/saheedportfolio/static/media/nuke.059f24b3.png",
+    "static/media/photo-shop.png": "/saheedportfolio/static/media/photo-shop.794f3387.png",
+    "static/media/redshift.png": "/saheedportfolio/static/media/redshift.88ec9ad5.png",
+    "static/media/vray.png": "/saheedportfolio/static/media/vray.97dc0c91.png",
+    "static/media/about.css": "/saheedportfolio/static/media/w2.2152470b.png",
+    "static/media/footer.css": "/saheedportfolio/static/media/w3.7ee967c4.png"
+  }
+}
