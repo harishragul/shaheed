@@ -1,3 +1,4 @@
+from django.core.files.storage import default_storage
 from django.db import models
 
 # Create your models here.
@@ -15,6 +16,7 @@ class Animation(models.Model):
     description = models.CharField(max_length=200)
     uploaded_at = models.DateTimeField(auto_now_add=True)
     main = models.BooleanField(default=False)
+    image = models.BooleanField(default=False)
 
     def __str__(self):
         return self.description

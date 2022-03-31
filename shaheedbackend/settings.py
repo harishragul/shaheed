@@ -25,11 +25,18 @@ SECRET_KEY = 'qvvgkbb)v#dp+=$%!1n4q1we4$6_8h3q$96fxzrtfwj(%qzb(k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://shaheedbackend.herokuapp.com", "shaheedbackend.herokuapp.com"]
+ALLOWED_HOSTS = ["https://shaheedbackend.herokuapp.com", "shaheedbackend.herokuapp.com", "127.0.0.1", '*']
 
-CORS_ORIGIN_WHITELIST = [
-     'http://localhost:3000'
-]
+CORS_ORIGIN_ALLOW_ALL = True
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticatedOrReadOnly',
+    )
+}
+
+
 
 
 # Application definition
